@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "SuperTableViewController.h"
+#import "ChlidTableViewController.h"
 
 @interface ViewController ()
 
@@ -14,10 +16,18 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-	[super viewDidLoad];
-	// Do any additional setup after loading the view.
+- (IBAction)pushSuper:(id)sender
+{
+	UITableViewController *controller = [SuperTableViewController new];
+	controller.title = @"Super";
+	[self.navigationController pushViewController:controller animated:YES];
 }
 
+- (IBAction)pushChild:(id)sender
+{
+	UITableViewController *controller = [ChlidTableViewController new];
+	controller.title = @"Child";
+	[self.navigationController pushViewController:controller animated:YES];
+}
 
 @end
