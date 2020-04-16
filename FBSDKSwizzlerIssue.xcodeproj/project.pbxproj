@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,9 +16,12 @@
 		A7CAC67D24486C1E005F5DCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC67C24486C1E005F5DCA /* main.m */; };
 		A7CAC68524486C4D005F5DCA /* SuperTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC68424486C4D005F5DCA /* SuperTableViewController.m */; };
 		A7CAC68824486C81005F5DCA /* ChlidTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC68724486C81005F5DCA /* ChlidTableViewController.m */; };
+		C86A54A64273467CBD1F3C74 /* Pods_FBSDKSwizzlerIssue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D704E3354F3833747EA16B0 /* Pods_FBSDKSwizzlerIssue.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C8AAC954A285A2BEB9C0F48 /* Pods-FBSDKSwizzlerIssue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBSDKSwizzlerIssue.release.xcconfig"; path = "Target Support Files/Pods-FBSDKSwizzlerIssue/Pods-FBSDKSwizzlerIssue.release.xcconfig"; sourceTree = "<group>"; };
+		4D704E3354F3833747EA16B0 /* Pods_FBSDKSwizzlerIssue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBSDKSwizzlerIssue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CAC66724486C1B005F5DCA /* FBSDKSwizzlerIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBSDKSwizzlerIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CAC66A24486C1B005F5DCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A7CAC66B24486C1B005F5DCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		A7CAC68424486C4D005F5DCA /* SuperTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperTableViewController.m; sourceTree = "<group>"; };
 		A7CAC68624486C81005F5DCA /* ChlidTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChlidTableViewController.h; sourceTree = "<group>"; };
 		A7CAC68724486C81005F5DCA /* ChlidTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChlidTableViewController.m; sourceTree = "<group>"; };
+		E23C87D685D0F326AEA91379 /* Pods-FBSDKSwizzlerIssue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBSDKSwizzlerIssue.debug.xcconfig"; path = "Target Support Files/Pods-FBSDKSwizzlerIssue/Pods-FBSDKSwizzlerIssue.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86A54A64273467CBD1F3C74 /* Pods_FBSDKSwizzlerIssue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +58,8 @@
 			children = (
 				A7CAC66924486C1B005F5DCA /* FBSDKSwizzlerIssue */,
 				A7CAC66824486C1B005F5DCA /* Products */,
+				E63E8702AEF395666CA61B72 /* Pods */,
+				B738DBEA5460B738E07DC908 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +93,23 @@
 			path = FBSDKSwizzlerIssue;
 			sourceTree = "<group>";
 		};
+		B738DBEA5460B738E07DC908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D704E3354F3833747EA16B0 /* Pods_FBSDKSwizzlerIssue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63E8702AEF395666CA61B72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E23C87D685D0F326AEA91379 /* Pods-FBSDKSwizzlerIssue.debug.xcconfig */,
+				1C8AAC954A285A2BEB9C0F48 /* Pods-FBSDKSwizzlerIssue.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7CAC68024486C1E005F5DCA /* Build configuration list for PBXNativeTarget "FBSDKSwizzlerIssue" */;
 			buildPhases = (
+				5669AEBE2A74789E54125AD4 /* [CP] Check Pods Manifest.lock */,
 				A7CAC66324486C1B005F5DCA /* Sources */,
 				A7CAC66424486C1B005F5DCA /* Frameworks */,
 				A7CAC66524486C1B005F5DCA /* Resources */,
+				AE642E576538F25B683A4C98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +176,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5669AEBE2A74789E54125AD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBSDKSwizzlerIssue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE642E576538F25B683A4C98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBSDKSwizzlerIssue/Pods-FBSDKSwizzlerIssue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBSDKSwizzlerIssue/Pods-FBSDKSwizzlerIssue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FBSDKSwizzlerIssue/Pods-FBSDKSwizzlerIssue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7CAC66324486C1B005F5DCA /* Sources */ = {
@@ -299,6 +367,7 @@
 		};
 		A7CAC68124486C1E005F5DCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E23C87D685D0F326AEA91379 /* Pods-FBSDKSwizzlerIssue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +385,7 @@
 		};
 		A7CAC68224486C1E005F5DCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8AAC954A285A2BEB9C0F48 /* Pods-FBSDKSwizzlerIssue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
