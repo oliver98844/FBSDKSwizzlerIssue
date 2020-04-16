@@ -20,6 +20,8 @@ If both super class and child class implements `tableView:didSelectRowAtIndexPat
 
 ## Step to reproduce
 
+***[Note]: Set valid Facebook app ID first to boot FBSDK correctly.***
+
 1. Pushes Super.
 2. Pushes Child.
 3. Taps any row.
