@@ -18,9 +18,7 @@ If both super class and child class implements `tableView:didSelectRowAtIndexPat
 @end
 ```
 
-## Step to reproduce
-
-***[Note]: Set valid Facebook app ID first to boot FBSDK correctly.***
+## Steps to reproduce
 
 1. Pushes Super.
 2. Pushes Child.

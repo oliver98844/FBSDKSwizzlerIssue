@@ -8,8 +8,6 @@
 
 #import "AppDelegate.h"
 
-@import FBSDKCoreKit;
-
 @interface AppDelegate ()
 
 @end
@@ -18,10 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Set valid app ID to boot FBSDK correctly.
-	[FBSDKSettings setAppID:@""];
-	[[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
-	[FBSDKAppEvents activateApp];
 	return YES;
 }
 
